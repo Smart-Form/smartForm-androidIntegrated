@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >Smart Form</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="generate_qr_code">Generate QR code</string>
+    <string name="smart_form">Smart Form</string>
+    <string name="instruc" />
+    <string name="change_lan">中文</string>
+    <string name="back">Back</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="selectservice">SelectService</string>
+    <string name="save_your_qr_code">Save your QR code</string>
+    <string name="apply">apply</string>
+    <string name="next_question">Next Question</string>
+    <string name="apply_success">apply success</string>
+    <string name="backtohome">back to home page </string>
+</resources>

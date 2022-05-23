@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.applicantend_se_fyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature   android:name="android.hardware.camera"
+        android:required="true"/>
+
+
+    <application
+        android:name=".GlobalVariable"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Applicantend_SE_FYP">
+        <activity
+            android:name=".SelectTypeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ScanQRcodeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".cameraActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".SubmitAnsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".SelectServiceActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name=".GenerateQRcodeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".GetAPIActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceDetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <activity
+            android:name=".question_signature"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_option3"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_option2"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".history"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".selected"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_daterange"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_date"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_binary"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_text_cht"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_option"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_text"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_mc"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".bye"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".address"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".address_confirm"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".id_card"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".id_card_confirm"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".select"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".language"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitAnsActivity">
+
+    <!--    dasdasd-->
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="650dp"
+        android:layout_height="110dp"
+        android:text="@string/apply_success"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="435dp"
+        android:layout_height="45dp"
+        android:text="@string/backtohome"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_success"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <Button
+        android:id="@+id/btn_backToHome"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="@color/smartFromColor"
+        android:text="@string/backtohome"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick_BackToHome"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
