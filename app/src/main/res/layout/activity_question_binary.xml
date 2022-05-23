@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".question_binary">
+
+    <ImageView
+        android:id="@+id/bg2"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.75"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:background="@drawable/bg2"
+        />
+
+    <TextView
+        android:id="@+id/back"
+
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text=" ◀ Back to Last Question"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.01"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleStart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.075"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleEnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.925"
+        />
+
+    <TextView
+        android:id="@+id/question_binary_title"
+
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="Question 1"
+        android:textAppearance="@style/title2"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="left|top"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.125"
+        />
+
+    <TextView
+        android:id="@+id/question_binary_subtitle"
+
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="1 of 8 Questions"
+        android:textAppearance="@style/subtitle"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:gravity="left|top"
+
+        app:layout_constraintTop_toBottomOf="@id/question_binary_title"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_question_binary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="50dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/imageView"
+
+                android:layout_width="0dp"
+                android:layout_height="650dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:background="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/question_binary_question"
+
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                app:layout_constraintWidth_percent="0.95"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+
+                android:text="Income per month (excluding contributions from family members, relatives and friends, etc.) "
+                android:textAppearance="@style/subtitle"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="left|top"
+
+                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintVertical_bias="0.025"
+                />
+
+            <Button
+                android:id="@+id/answer_binary0"
+                android:visibility="visible"
+
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                app:layout_constraintWidth_percent="0.45"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="@id/question_binary_question"
+                app:layout_constraintTop_toBottomOf="@id/question_binary_question"
+
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textAppearance="@style/title4"
+                android:maxLines="3"
+                android:backgroundTint="#CCCCCC"
+                app:cornerRadius="100dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+
+                app:strokeColor="@android:color/white"
+                app:strokeWidth="2dp"
+                />
+
+            <Button
+                android:id="@+id/answer_binary1"
+                android:visibility="visible"
+
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                app:layout_constraintWidth_percent="0.45"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="@id/question_binary_question"
+                app:layout_constraintTop_toBottomOf="@id/question_binary_question"
+
+                android:text="No"
+                android:textColor="#000000"
+                android:textAppearance="@style/title4"
+                android:maxLines="3"
+                android:backgroundTint="#CCCCCC"
+                app:cornerRadius="100dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+
+                app:strokeColor="@android:color/white"
+                app:strokeWidth="2dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/loading"
+
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:text="Next Question"
+        android:gravity="center_horizontal|center"
+        android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:backgroundTint="#D3AC9C"
+        app:cornerRadius="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+
+        app:layout_constraintVertical_bias="0.925"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

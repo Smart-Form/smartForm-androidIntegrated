@@ -28,6 +28,4 @@
         app:layout_constraintStart_toStartOf="parent"
         android:onClick="onClick_Back"/>
 
-    <!--    dasdasd-->
-
 </androidx.constraintlayout.widget.ConstraintLayout>

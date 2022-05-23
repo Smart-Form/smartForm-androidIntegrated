@@ -57,10 +57,6 @@
             android:name=".ServiceDetailActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="false" />
 
         <activity
             android:name=".question_signature"

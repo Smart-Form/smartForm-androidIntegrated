@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".address">
+
+    <ImageView
+        android:id="@+id/bg2"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.75"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:background="@drawable/bg2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleStart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.075"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleEnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.925"
+        />
+
+    <TextView
+        android:id="@+id/instruc"
+
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="Put your Address"
+        android:autoSizeTextType="uniform"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal|top"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.125"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/address"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.5"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:background="@android:color/white"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:elevation="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/scanner"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintHeight_percent="0.25"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintEnd_toEndOf="@id/address"
+        app:layout_constraintStart_toStartOf="@id/address"
+        app:layout_constraintTop_toTopOf="@id/address"
+
+        android:background="@drawable/scanner"
+        android:elevation="10dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/scan"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintEnd_toEndOf="@id/address"
+        app:layout_constraintStart_toStartOf="@id/address"
+        app:layout_constraintTop_toBottomOf="@id/scanner"
+        app:layout_constraintBottom_toBottomOf="@id/address"
+
+        app:lottie_rawRes="@raw/upload"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.5"
+
+        android:elevation="10dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:lottie_rawRes="@raw/loading_animation"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.5"
+
+        app:layout_constraintVertical_bias="0.90"
+        />
+
+    <TextView
+        android:id="@+id/loading_txt"
+
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="@string/loading_txt"
+        android:textAppearance="@style/text"
+        android:gravity="center_horizontal|top"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

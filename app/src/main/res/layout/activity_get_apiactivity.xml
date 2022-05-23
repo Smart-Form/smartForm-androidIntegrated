@@ -23,29 +23,6 @@
         android:background="@drawable/bg2"
         />
 
-    <TextView
-        android:id="@+id/instruc"
-
-        android:layout_width="358dp"
-        android:layout_height="57dp"
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="560dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        android:text="@string/instruc"
-        android:textAppearance="@style/instruc"
-        />
-
     <ImageView
         android:id="@+id/idcard"
 

@@ -36,10 +36,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="4dp"
         android:text=""
-        android:backgroundTint="@color/smartFromColor"
+        android:backgroundTint="@color/primaryLightColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--    dasdasd-->
 </androidx.constraintlayout.widget.ConstraintLayout>

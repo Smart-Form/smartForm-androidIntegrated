@@ -31,8 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:onClick="onClickApply"
-        android:backgroundTint="@color/smartFromColor"
+        android:backgroundTint="@color/primaryLightColor"
         />
-    <!--    dasdasd-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

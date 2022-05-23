@@ -15,4 +15,7 @@
     <string name="next_question">繼續</string>
     <string name="apply_success">申請成功</string>
     <string name="backtohome">返回主頁面</string>
+
+    <string name="one_for_all">One For All\nSmart For Care</string>
+    <string name="loading_txt">加載中</string>
 </resources>

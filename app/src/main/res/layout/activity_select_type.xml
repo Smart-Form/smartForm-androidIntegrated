@@ -12,7 +12,7 @@
         android:layout_height="150dp"
         android:layout_marginTop="444dp"
 
-        android:backgroundTint="@color/smartFromColor"
+        android:backgroundTint="@color/primaryLightColor"
         android:text="@string/generate_qr_code"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
         android:layout_height="150dp"
         android:layout_marginTop="60dp"
 
-        android:backgroundTint="@color/smartFromColor"
+        android:backgroundTint="@color/primaryLightColor"
         android:text="@string/scan_qr_code"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -49,5 +49,4 @@
         android:textStyle="bold"
         android:onClick="onClick_changeLan"/>
 
-    <!--    dasdasd-->
 </androidx.constraintlayout.widget.ConstraintLayout>

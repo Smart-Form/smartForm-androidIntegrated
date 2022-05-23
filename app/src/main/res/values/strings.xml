@@ -4,7 +4,7 @@
     <string name="app_name" >Smart Form</string>
     <string name="scan_qr_code">Scan QR code</string>
     <string name="generate_qr_code">Generate QR code</string>
-    <string name="smart_form">Smart Form</string>
+    <string name="smart_form">SMART FORM</string>
     <string name="instruc" />
     <string name="change_lan">中文</string>
     <string name="back">Back</string>
@@ -16,4 +16,7 @@
     <string name="next_question">Next Question</string>
     <string name="apply_success">apply success</string>
     <string name="backtohome">back to home page </string>
+
+    <string name="one_for_all">One For All Smart For Care</string>
+    <string name="loading_txt">Loading</string>
 </resources>
