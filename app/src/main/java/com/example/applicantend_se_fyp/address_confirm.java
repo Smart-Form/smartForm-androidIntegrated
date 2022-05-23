@@ -37,7 +37,7 @@ public class address_confirm extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(address_confirm.this, select.class));
+                startActivity(new Intent(address_confirm.this, GenerateQRcodeActivity.class));
             }
         });
 

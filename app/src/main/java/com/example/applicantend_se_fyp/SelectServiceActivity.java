@@ -23,15 +23,18 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
+
+// Moved to "select.java"
+
 public class SelectServiceActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    ArrayList<Service> serviceList;
-
-    Context context;
-    Resources resources;
-    Button btnBack;
-    public static String personData = "";
+//    RecyclerView recyclerView;
+//    ArrayList<Service> serviceList;
+//
+//    Context context;
+//    Resources resources;
+//    Button btnBack;
+//    public static String personData = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,69 +42,69 @@ public class SelectServiceActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_select_service);
 
-        String language = ((GlobalVariable) this.getApplication()).getLanguage();
-        context = LocaleHelper.setLocale(this, language);
-        resources = context.getResources();
+//        String language = ((GlobalVariable) this.getApplication()).getLanguage();
+//        context = LocaleHelper.setLocale(this, language);
+//        resources = context.getResources();
+//
+//        personData = getIntent().getStringExtra("result");
+//
+//        // UI
+//        btnBack = findViewById(R.id.btnBack);
+//        recyclerView = findViewById(R.id.recyclerView_service);
+//        btnBack.setText(resources.getString(R.string.back));
+//
+//        // Firebase
+//        FirebaseFirestore db = FirebaseFirestore.getInstance();
+//
+//        // Service data ArrayList
+//        serviceList = new ArrayList<>();
+//
+//        // newView 3
+//        RecyclerViewAdapter rvAdapter = new RecyclerViewAdapter(this, serviceList);
+//        recyclerView.setAdapter(rvAdapter);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        personData = getIntent().getStringExtra("result");
-
-        // UI
-        btnBack = findViewById(R.id.btnBack);
-        recyclerView = findViewById(R.id.recyclerView_service);
-        btnBack.setText(resources.getString(R.string.back));
-
-        // Firebase
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-        serviceList = new ArrayList<>();
-
-        // newView 3
-        RecyclerViewAdapter rvAdapter = new RecyclerViewAdapter(this, serviceList);
-        recyclerView.setAdapter(rvAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        // Firebase
-        db.collection("service")
-                .whereEqualTo("status", "verified")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                //Log.d("TAG", document.getId() + " => " + document.getString("serviceName"));
-                                    Service tmp = new Service(
-                                            document.getString("serviceName"),
-                                            document.getId(),
-                                            document.getString("age"),
-                                            document.getString("ageUpDown"),
-                                            document.getString("creatorID"),
-                                            document.getString("introduction"),
-                                            document.getString("money"),
-                                            document.getString("targetAudience"),
-                                            document.getString("terms"),
-                                            document.getString("dateStart"),
-                                            document.getString("dateEnd"),
-                                            document.getString("autoFillOptions"),
-                                            document.getString("posterImg"),
-                                            document.getString("type")
-                                    );
-                                serviceList.add(tmp);
-                            }
-                            rvAdapter.notifyDataSetChanged();
-                        } else {
-                            Log.d("TAG", "Error getting documents: ", task.getException());
-                        }
-                    }
-                });
+//        // Firebase
+//        db.collection("service")
+//                .whereEqualTo("status", "verified")
+//                .get()
+//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                        if (task.isSuccessful()) {
+//                            for (QueryDocumentSnapshot document : task.getResult()) {
+//                                //Log.d("TAG", document.getId() + " => " + document.getString("serviceName"));
+//                                    Service tmp = new Service(
+//                                            document.getString("serviceName"),
+//                                            document.getId(),
+//                                            document.getString("age"),
+//                                            document.getString("ageUpDown"),
+//                                            document.getString("creatorID"),
+//                                            document.getString("introduction"),
+//                                            document.getString("money"),
+//                                            document.getString("targetAudience"),
+//                                            document.getString("terms"),
+//                                            document.getString("dateStart"),
+//                                            document.getString("dateEnd"),
+//                                            document.getString("autoFillOptions"),
+//                                            document.getString("posterImg"),
+//                                            document.getString("type")
+//                                    );
+//                                // Insert into service data ArrayList
+//                                serviceList.add(tmp);
+//                            }
+//                            rvAdapter.notifyDataSetChanged();
+//                        } else {
+//                            Log.d("TAG", "Error getting documents: ", task.getException());
+//                        }
+//                    }
+//                });
 
     }
 
-    public void onClick_Back(View view) {
-
-        Intent intent = new Intent(this, SelectTypeActivity.class);
-        startActivity(intent);
-    }
+//    public void onClick_Back(View view) {
+//
+//        Intent intent = new Intent(this, SelectTypeActivity.class);
+//        startActivity(intent);
+//    }
 }
-
-//psuh

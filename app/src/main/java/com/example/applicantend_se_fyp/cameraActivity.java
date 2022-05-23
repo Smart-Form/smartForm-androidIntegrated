@@ -173,7 +173,7 @@ public class cameraActivity extends AppCompatActivity {
                 os.close();
                 Toast.makeText(getApplicationContext(), "保存成功", Toast.LENGTH_SHORT).show();
 
-                // newView 2.1.2
+                // newView 2.1.3
                 Intent intent = new Intent(cameraActivity.this, GetAPIActivity.class);
                 intent.putExtra("photoUri",Uri.fromFile(new File(photoPath)).toString());
 

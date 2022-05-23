@@ -91,8 +91,8 @@ import java.util.ArrayList;
             @Override
             public void onClick(View view) {
 
-                // newView 2.1.3
-                Intent intent = new Intent(GetAPIActivity.this, GenerateQRcodeActivity.class);
+                // newView 2.1.4
+                Intent intent = new Intent(GetAPIActivity.this, id_card_confirm.class);
 
                 intent.putExtra("json", data);
                 //fake data

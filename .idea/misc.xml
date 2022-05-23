@@ -15,11 +15,13 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/applicantend_SE_FYP/app/src/main/res/layout/rv_row.xml" value="0.2767210144927536" />
         <entry key="app/src/main/res/drawable/img_view_border.xml" value="0.299" />
         <entry key="app/src/main/res/layout/activity_address.xml" value="0.10354785478547855" />
+        <entry key="app/src/main/res/layout/activity_address_confirm.xml" value="0.10354785478547855" />
         <entry key="app/src/main/res/layout/activity_ask_first_time_use.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/activity_bye.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_camera.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_generate_qrcode.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_get_apiactivity.xml" value="0.1381683349609375" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.10354785478547855" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.10354785478547855" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_question.xml" value="0.1" />

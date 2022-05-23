@@ -49,7 +49,7 @@ public class SelectTypeActivity extends AppCompatActivity {
         // Lucifer
 
         // newView 2.1.1
-        Intent intent = new Intent(this, cameraActivity.class);
+        Intent intent = new Intent(this, id_card.class);
 
         startActivity(intent);
     }

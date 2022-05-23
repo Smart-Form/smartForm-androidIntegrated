@@ -26,28 +26,31 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
+    // Data in
     ArrayList<Service> serviceArrayList;
     Context context;
-
     public RecyclerViewAdapter(Context ct, ArrayList<Service> s1){
-        context = ct;
+        context = ct; // Is this app?
         serviceArrayList = s1;
     }
 
+    // viewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.rv_row, parent, false);
-        return new ViewHolder(view);
+        LayoutInflater inflater = LayoutInflater.from(context); // Define LayoutInflater to parse a view
+        View view = inflater.inflate(R.layout.rv_row, parent, false); // Define the view
+        return new ViewHolder(view); // viewHolder 2
     }
+    // ViewHolder end
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Service tmp = serviceArrayList.get(position);
-        holder.textview1.setText(tmp.getS_name());
 
-        //posterImg
+        holder.textview1.setText(tmp.getS_name()); // Set Title
+
+        // posterImg
         if(!tmp.s_img.equals("none")){
 
             String url_path =
@@ -58,10 +61,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Glide.with(this.context)
                     .load(url_path)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
-                    .into(holder.getImage());
+                    .into(holder.getImage()); // posterImg 2 // Set Image
 
         }
-
+        // posterImg end
     }
 
     @Override
@@ -69,17 +72,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return serviceArrayList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    // viewHolder 3
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView textview1;
-        //posterImg
-        ImageView imgV_poster;
+        ImageView imgV_poster; // posterImg 4
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             textview1 = itemView.findViewById(R.id.rv_testView);
-            //posterImg
-            imgV_poster = itemView.findViewById(R.id.imgView_poster);
+            imgV_poster = itemView.findViewById(R.id.imgView_poster); // posterImg 5
 
             //on Click the item itself
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -92,23 +95,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             });
         }
 
-        //posterImg
-        public ImageView getImage(){ return this.imgV_poster;}
+        public ImageView getImage(){ return this.imgV_poster;} // posterImg 3
 
     }
+    // viewHolder 3 end
 
     public void pass_ServiceDetailActivity(Service service) {
 
         // newView 4
         Intent intent = new Intent(context,ServiceDetailActivity.class);
         intent.putExtra("service_obj", service);
-        Log.d("TAG", "Select service " + SelectServiceActivity.personData);
-        intent.putExtra("personData", SelectServiceActivity.personData);
+        Log.d("TAG", "Select service " + select.personData);
+        intent.putExtra("personData", select.personData);
         context.startActivity(intent);
     }
 
 }
-
-
-
-//psuh

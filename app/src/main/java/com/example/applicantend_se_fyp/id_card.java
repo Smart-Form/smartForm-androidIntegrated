@@ -37,7 +37,9 @@ public class id_card extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(id_card.this, id_card_confirm.class));
+
+                // newView 2.1.2
+                startActivity(new Intent(id_card.this, cameraActivity.class));
             }
         });
     }

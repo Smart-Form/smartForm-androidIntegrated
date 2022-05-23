@@ -2,12 +2,14 @@ package com.example.applicantend_se_fyp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent; // buttonOnclickNewIntent
 import android.os.Bundle;
 import android.view.View; // buttonOnclickNewIntent
 import android.view.Window; // removeTitleBar
 import android.view.WindowManager; // removeTitleBar
 import android.widget.Button; // buttonOnclickNewIntent
+import android.widget.ImageButton;
 
 public class language extends AppCompatActivity {
 
@@ -42,7 +44,7 @@ public class language extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                startActivity(new Intent(language.this, id_card.class));
+                startActivity(new Intent(language.this, SelectTypeActivity.class));
             }
         });
         Button btn2 = (Button)findViewById(R.id.cht);

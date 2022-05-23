@@ -32,13 +32,6 @@ import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
 
-    //RecyclerView recyclerView;
-    //ArrayList<Service> serviceList;
-    ImageButton btn_start;
-    String[] permissions ={
-            Manifest.permission.CAMERA
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

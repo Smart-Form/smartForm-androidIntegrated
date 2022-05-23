@@ -127,7 +127,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Flat A, 20/F, Block 1, Festival City I Tower 2, 1 Mei Tin Rd, Tai Wai"
+        android:text="*Sample Data*:\n\nFlat A, 20/F, Block 1, Festival City I Tower 2, 1 Mei Tin Rd, Tai Wai"
         android:textColor="#000000"
         android:textAppearance="@style/title4"
         android:ellipsize="end"
