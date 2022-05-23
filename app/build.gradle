@@ -50,4 +50,10 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+
+    // lottieAnimation
+    implementation "com.airbnb.android:lottie:5.0.3"
+
+    // signaturePad
+    implementation project(":signature-pad")
 }

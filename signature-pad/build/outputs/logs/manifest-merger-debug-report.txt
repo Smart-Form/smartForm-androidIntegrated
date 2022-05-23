@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:3:11-52
+		INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+		INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:5:11-38
+	xmlns:android
+		ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:4:11-36
+application
+ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml:7:5-20
+uses-sdk
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+		ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+		INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+		ADDED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
+		INJECTED from /Users/cyrus/Google Drive/sem5/DDM4252_GraduationProjectForCreativeMedia/smartForm-android/smartForm-android/smartformandroid/signature-pad/src/main/AndroidManifest.xml
