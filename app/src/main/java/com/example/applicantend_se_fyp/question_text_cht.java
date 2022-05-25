@@ -47,7 +47,7 @@ public class question_text_cht extends AppCompatActivity {
             }
         });
 
-        EditText editText = (EditText) findViewById(R.id.plain_text_input);
+        EditText editText = (EditText) findViewById(R.id.plain_text_input_cht);
         editText.setImeHintLocales(new LocaleList(new Locale("zh", "CN")));
         editText.addTextChangedListener(new TextWatcher() {
             @Override
