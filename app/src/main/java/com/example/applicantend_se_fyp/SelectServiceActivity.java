@@ -39,7 +39,7 @@ public class SelectServiceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         setContentView(R.layout.activity_select_service);
 
 //        String language = ((GlobalVariable) this.getApplication()).getLanguage();

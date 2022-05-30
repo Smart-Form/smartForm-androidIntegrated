@@ -37,7 +37,7 @@ public class SubmitAnsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         setContentView(R.layout.activity_submit_ans);
 
         String language = ((GlobalVariable) this.getApplication()).getLanguage();

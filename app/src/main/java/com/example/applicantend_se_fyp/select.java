@@ -38,9 +38,7 @@ public class select extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<Service> serviceList;
 
-    Context context;
-    Resources resources;
-    Button btnBack;
+    // Get Intent data
     public static String personData = "";
 
     @Override
@@ -65,14 +63,16 @@ public class select extends AppCompatActivity {
 
 
 
+        // Change language
         String language = ((GlobalVariable) this.getApplication()).getLanguage();
-        context = LocaleHelper.setLocale(this, language);
-        resources = context.getResources();
+        Context context = (Context) LocaleHelper.setLocale(this, language);
+        Resources resources = (Resources) context.getResources();
 
+        // Get Intent data
         personData = getIntent().getStringExtra("result");
 
         // UI
-        btnBack = findViewById(R.id.btnBack);
+        Button btnBack = (Button) findViewById(R.id.btnBack);
         recyclerView = findViewById(R.id.recyclerView_service);
         btnBack.setText(resources.getString(R.string.back));
 

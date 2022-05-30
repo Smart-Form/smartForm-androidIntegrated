@@ -21,25 +21,26 @@ import io.grpc.internal.SharedResourceHolder;
 
 public class SelectTypeActivity extends AppCompatActivity {
 
-    Button btn_genQR, btn_scanQR, btn_changeLan;
-    Context context;
-    Resources resources;
-    public static String language = "en";
-    GlobalVariable gv = ((GlobalVariable) this.getApplication());
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         setContentView(R.layout.activity_select_type);
 
-        ((GlobalVariable) this.getApplication()).setLanguage("en");
+        Button btn_genQR = (Button) findViewById(R.id.btnGenQR);
+        Button btn_scanQR = (Button) findViewById(R.id.btnScanQR);
 
-        btn_genQR = findViewById(R.id.btnGenQR);
-        btn_scanQR = findViewById(R.id.btnScanQR);
-        btn_changeLan = findViewById(R.id.btnChangeLan);
+        // changeLang
+//        String language = (String) Locale.getDefault().getLanguage(); // Method 1: If matches system setting
+//        Log.d("TAG", language);
+        String language = (String) ((GlobalVariable) getApplication()).getLanguage(); // Method 2: If matches GlobalVariable
+        Log.d("TAG", language);
 
-        //Log.d("TAG", "onCreate : " + Locale. getDefault(). getLanguage());
+        Context context = (Context) LocaleHelper.setLocale(this, language);
+        Resources resources = (Resources) context.getResources();
+        btn_scanQR.setText(resources.getString(R.string.scan_qr_code));
+        btn_genQR.setText(resources.getString(R.string.generate_qr_code));
+        // changeLang end
     }
 
     //scan ID card to gen QR code
@@ -66,24 +67,4 @@ public class SelectTypeActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
-
-    public void onClick_changeLan(View view) {
-        if(Locale. getDefault().getLanguage() == "en"){
-            language = "zh";
-            ((GlobalVariable) this.getApplication()).setLanguage("zh");
-        }
-        else {
-            language = "en";
-            ((GlobalVariable) this.getApplication()).setLanguage("en");
-        }
-        context = LocaleHelper.setLocale(this, language);
-        resources = context.getResources();
-        btn_changeLan.setText(resources.getString(R.string.change_lan));
-        btn_scanQR.setText(resources.getString(R.string.scan_qr_code));
-        btn_genQR.setText(resources.getString(R.string.generate_qr_code));
-
-        //Log.d("TAG", "btnClick : " + Locale. getDefault(). getLanguage());
-    }
-
-
 }

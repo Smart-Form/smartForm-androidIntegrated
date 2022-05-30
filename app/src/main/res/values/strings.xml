@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name" >Smart Form</string>
     <string name="scan_qr_code">Scan QR code</string>
     <string name="generate_qr_code">Generate QR code</string>
     <string name="smart_form">SMART FORM</string>
-    <string name="instruc" />
     <string name="change_lan">中文</string>
     <string name="back">Back</string>
     <string name="yes">Yes</string>

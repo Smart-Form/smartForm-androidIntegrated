@@ -3,15 +3,25 @@ package com.example.applicantend_se_fyp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent; // buttonOnclickNewIntent
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View; // buttonOnclickNewIntent
 import android.view.Window; // removeTitleBar
 import android.view.WindowManager; // removeTitleBar
 import android.widget.Button; // buttonOnclickNewIntent
-import android.widget.ImageButton;
+
+import java.util.Locale;
+
 
 public class language extends AppCompatActivity {
+
+    public static String language; // changeLangBtn
+
+    String[] permissions ={
+            Manifest.permission.CAMERA
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +49,16 @@ public class language extends AppCompatActivity {
         setContentView(R.layout.activity_language);
 
         // buttonOnclickNewIntent 2
+        // changeLangBtn 2
         Button btn = (Button)findViewById(R.id.eng);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Set Language
+                language = "en";
+                ((GlobalVariable) getApplication()).setLanguage("en"); // GlobalVariable
+
+                // New View
                 finish();
                 startActivity(new Intent(language.this, SelectTypeActivity.class));
             }
@@ -51,10 +67,16 @@ public class language extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Set Language
+                language = "zh";
+                ((GlobalVariable) getApplication()).setLanguage("zh"); // GlobalVariable
+
+                // New View
                 finish();
-                startActivity(new Intent(language.this, language.class));
+                startActivity(new Intent(language.this, SelectTypeActivity.class));
             }
         });
+        // changeLangBtn 2 end
         // buttonOnclickNewIntent 2 end
     }
 }

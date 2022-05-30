@@ -13,6 +13,8 @@ import android.os.Bundle;
 
 
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,7 +32,27 @@ public class ScanQRcodeActivity extends AppCompatActivity implements ZXingScanne
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); // keepScreenOn
+
+        // removeTitleBar
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // removeTitleBar end
+
+        // hideTheNavigationBar
+        View decorView = getWindow().getDecorView();
+        // Hide both the navigation bar and the status bar.
+        // SYSTEM_UI_FLAG_FULLSCREEN is only available on Android 4.1 and higher, but as
+        // a general rule, you should design your app to hide the status bar whenever you
+        // hide the navigation bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+        // hideTheNavigationBar end
+
         setContentView(R.layout.activity_scan_qrcode);
 
         language = getIntent().getStringExtra("language");
@@ -77,7 +99,7 @@ public class ScanQRcodeActivity extends AppCompatActivity implements ZXingScanne
         String result = rawResult+"";
 
         // newView 2.2.2
-        Intent intent = new Intent(ScanQRcodeActivity.this, SelectServiceActivity.class);
+        Intent intent = new Intent(ScanQRcodeActivity.this, select.class);
         intent.putExtra("result", result);
         startActivity(intent);
         //send result
