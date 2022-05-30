@@ -6,16 +6,32 @@
     android:layout_height="wrap_content"
     android:background="?android:attr/selectableItemBackground">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleStart_all"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.075" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleEnd_all"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.925" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_all"
+        app:layout_constraintStart_toStartOf="@id/guideline_titleStart_all"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
         app:cardCornerRadius="25dp"
         >
         <androidx.constraintlayout.widget.ConstraintLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -60,7 +76,7 @@
 
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:button="@null"
+                android:text=""
                 android:background="?android:attr/listChoiceIndicatorSingle"
                 android:layout_marginTop="275dp"
                 android:backgroundTint="#FFFFFF"

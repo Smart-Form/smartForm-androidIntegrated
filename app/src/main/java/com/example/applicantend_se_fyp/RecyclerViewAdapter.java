@@ -105,8 +105,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         // newView 4
         Intent intent = new Intent(context,ServiceDetailActivity.class);
         intent.putExtra("service_obj", service);
-        Log.d("TAG", "Select service " + select.personData);
-        intent.putExtra("personData", select.personData);
+        Log.d("TAG", "Select service " + SelectServiceActivity.personData);
+        intent.putExtra("personData", SelectServiceActivity.personData);
         context.startActivity(intent);
     }
 

@@ -49,7 +49,7 @@ public class GenerateQRcodeActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 // newView 2.1.5
-                Intent intent = new Intent(GenerateQRcodeActivity.this, select.class);
+                Intent intent = new Intent(GenerateQRcodeActivity.this, SelectServiceActivity.class);
                 Log.d("TAG", "GQA : " + qrCodeContent);
                 intent.putExtra("result", qrCodeContent);
                 startActivity(intent);

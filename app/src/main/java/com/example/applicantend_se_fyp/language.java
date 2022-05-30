@@ -60,7 +60,8 @@ public class language extends AppCompatActivity {
 
                 // New View
                 finish();
-                startActivity(new Intent(language.this, SelectTypeActivity.class));
+                startActivity(new Intent(language.this, SelectServiceActivity.class));
+//                startActivity(new Intent(language.this, SelectTypeActivity.class));
             }
         });
         Button btn2 = (Button)findViewById(R.id.cht);

@@ -7,580 +7,725 @@
     android:background="@android:color/white"
     tools:context=".select">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_titleStart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.075" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_titleEnd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.925" />
-
-    <TextView
-        android:id="@+id/back"
-
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:text="Select Your Welfare"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:autoSizeTextType="uniform"
-        android:textColor="#000000"
-        android:textStyle="bold"
-
-        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"
-        app:layout_constraintEnd_toStartOf="@id/imgBtn_profile"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintVertical_bias="0.025"
-        />
-
-    <ImageButton
-        android:id="@+id/imgBtn_profile"
-
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:src="@drawable/ic_baseline_account_box_24"
-        android:tint="#D3AC9C"
-        android:backgroundTint="#FFFFFF"
-        android:foreground="?android:attr/selectableItemBackground"
-
-        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="@id/back"
-        />
-
-    <Button
-        android:id="@+id/all_form"
-
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        app:layout_constraintWidth_percent="0.2"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintTop_toBottomOf="@id/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        android:text="ALL"
-        android:gravity="center_horizontal|center"
-        android:textColor="#FFFFFF"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        android:backgroundTint="#D3AC9C"
-        app:cornerRadius="100dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-
-        app:layout_constraintVertical_bias="0.0125"
-        />
-
-    <Button
-        android:id="@+id/gov_form"
-
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        app:layout_constraintWidth_percent="0.2"
-
-        android:layout_marginStart="10dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintStart_toEndOf="@+id/all_form"
-        app:layout_constraintTop_toBottomOf="@id/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        android:text="GOV"
-        android:gravity="center_horizontal|center"
-        android:textColor="#000000"
-        android:backgroundTint="#CCCCCC"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        app:cornerRadius="100dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-
-        app:layout_constraintVertical_bias="0.0125"
-        />
-
-    <Button
-        android:id="@+id/ngo_form"
-
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        app:layout_constraintWidth_percent="0.2"
-
-        android:layout_marginStart="10dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintStart_toEndOf="@+id/gov_form"
-        app:layout_constraintTop_toBottomOf="@id/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        android:text="NGO"
-        android:gravity="center_horizontal|center"
-        android:textColor="#000000"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        android:backgroundTint="#CCCCCC"
-        app:cornerRadius="100dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-
-        app:layout_constraintVertical_bias="0.0125"
-        />
-
-    <Button
-        android:id="@+id/cha_form"
-
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        app:layout_constraintWidth_percent="0.2"
-
-        android:layout_marginStart="10dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintStart_toEndOf="@+id/ngo_form"
-        app:layout_constraintTop_toBottomOf="@id/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        android:text="CHA"
-        android:gravity="center_horizontal|center"
-        android:textColor="#000000"
-        android:backgroundTint="#CCCCCC"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        app:cornerRadius="100dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-
-        app:layout_constraintVertical_bias="0.0125"
-        />
-
-    <ScrollView
-        android:id="@+id/scroll_view_all"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="175dp"
-        android:layout_marginBottom="150dp"
-        android:fillViewport="true"
-        android:visibility="visible"
-        >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout_all"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleStart_all"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.075" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleEnd_all"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.925" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView_service"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_all"
-                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_all"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/scroll_view_gov"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="175dp"
-        android:layout_marginBottom="150dp"
-        android:fillViewport="true"
-        android:visibility="invisible"
-        >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout_gov"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleStart_gov"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.075" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleEnd_gov"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.925" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView_gov_gov"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
-                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:cardCornerRadius="25dp"
-                    >
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        >
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_height="400dp"
-
-                            android:background="@drawable/banner_gov"
-
-                            app:layout_constraintTop_toTopOf="parent"
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="125dp"
-
-                            android:background="#CCCCCC99"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="125dp"
-                            app:layout_constraintWidth_percent="0.65"
-
-                            android:paddingStart="25dp"
-
-                            android:text="Senior Citizen Card"
-                            android:maxLines="1"
-                            android:textAppearance="@style/text3"
-                            android:ellipsize="end"
-                            android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:gravity="left|center"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                            <CheckBox
-                                android:id="@+id/select_checkbox_gov_gov"
-
-                                android:layout_width="125dp"
-                                android:layout_height="125dp"
-                                android:button="@null"
-                                android:background="?android:attr/listChoiceIndicatorSingle"
-                                android:layout_marginTop="275dp"
-                                android:backgroundTint="#FFFFFF"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView_gov2_gov"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
-                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
-                    app:layout_constraintTop_toBottomOf="@id/cardView_gov_gov"
-                    app:cardCornerRadius="25dp"
-                    >
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        >
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_height="400dp"
-
-                            android:background="@drawable/banner_gov2"
-
-                            app:layout_constraintTop_toTopOf="parent"
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="125dp"
-
-                            android:background="#CCCCCC99"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="125dp"
-                            app:layout_constraintWidth_percent="0.65"
-
-                            android:paddingStart="25dp"
-
-                            android:text="Old Age Allowance"
-                            android:maxLines="1"
-                            android:textAppearance="@style/text3"
-                            android:ellipsize="end"
-                            android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:gravity="left|center"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                            <CheckBox
-                                android:id="@+id/select_checkbox_gov2_gov"
-
-                                android:layout_width="125dp"
-                                android:layout_height="125dp"
-                                android:button="@null"
-                                android:background="?android:attr/listChoiceIndicatorSingle"
-                                android:layout_marginTop="275dp"
-                                android:backgroundTint="#FFFFFF"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/scroll_view_ngo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="175dp"
-        android:layout_marginBottom="150dp"
-        android:fillViewport="true"
-        android:visibility="invisible"
-        >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout_ngo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleStart_ngo"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.075" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleEnd_ngo"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.925" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView_ngo_ngo"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_ngo"
-                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_ngo"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:cardCornerRadius="25dp"
-                    >
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_height="400dp"
-
-                            android:background="@drawable/banner_ngo"
-
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:layout_editor_absoluteX="0dp"
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="125dp"
-
-                            android:background="#CCCCCC99"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="125dp"
-                            app:layout_constraintWidth_percent="0.65"
-
-                            android:paddingStart="25dp"
-
-                            android:text="Senior Citizen Card"
-                            android:maxLines="1"
-                            android:textAppearance="@style/text3"
-                            android:ellipsize="end"
-                            android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:gravity="left|center"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                            <CheckBox
-                                android:id="@+id/select_checkbox_ngo_ngo"
-
-                                android:layout_width="125dp"
-                                android:layout_height="125dp"
-                                android:button="@null"
-                                android:background="?android:attr/listChoiceIndicatorSingle"
-                                android:layout_marginTop="275dp"
-                                android:backgroundTint="#FFFFFF"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/scroll_view_cha"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="175dp"
-        android:layout_marginBottom="150dp"
-        android:fillViewport="true"
-        android:visibility="invisible"
-        >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout_cha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleStart_cha"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.075" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_titleEnd_cha"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.925" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView_cha_cha"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_cha"
-                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_cha"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:cardCornerRadius="25dp"
-                    >
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        >
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_height="400dp"
-
-                            android:background="@drawable/banner_default"
-
-                            app:layout_constraintTop_toTopOf="parent"
-                            />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="125dp"
-
-                            android:background="#CCCCCC99"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="125dp"
-                            app:layout_constraintWidth_percent="0.65"
-
-                            android:paddingStart="25dp"
-
-                            android:text="Short-term Food Assistance Service - Blessed Food"
-                            android:maxLines="1"
-                            android:textAppearance="@style/text3"
-                            android:ellipsize="end"
-                            android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:gravity="left|center"
-
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-                            <CheckBox
-                                android:id="@+id/select_checkbox_cha_cha"
-
-                                android:layout_width="125dp"
-                                android:layout_height="125dp"
-                                android:button="@null"
-                                android:background="?android:attr/listChoiceIndicatorSingle"
-                                android:layout_marginTop="275dp"
-                                android:backgroundTint="#FFFFFF"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_titleStart"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0.075" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_titleEnd"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0.925" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/back"-->
+
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="50dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        android:text="Select Your Welfare"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:autoSizeTextType="uniform"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textStyle="bold"-->
+
+<!--        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/imgBtn_profile"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        app:layout_constraintVertical_bias="0.025"-->
+<!--        />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imgBtn_profile"-->
+
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        android:src="@drawable/ic_baseline_account_box_24"-->
+<!--        android:tint="#D3AC9C"-->
+<!--        android:backgroundTint="#FFFFFF"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+
+<!--        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"-->
+<!--        app:layout_constraintTop_toTopOf="@id/back"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/all_form"-->
+
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        app:layout_constraintWidth_percent="0.2"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/back"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        android:text="ALL"-->
+<!--        android:gravity="center_horizontal|center"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:autoSizeTextType="uniform"-->
+<!--        android:maxLines="1"-->
+<!--        android:backgroundTint="#D3AC9C"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textStyle="bold"-->
+
+<!--        app:layout_constraintVertical_bias="0.0125"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/gov_form"-->
+
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        app:layout_constraintWidth_percent="0.2"-->
+
+<!--        android:layout_marginStart="10dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        app:layout_constraintStart_toEndOf="@+id/all_form"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/back"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        android:text="GOV"-->
+<!--        android:gravity="center_horizontal|center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:backgroundTint="#CCCCCC"-->
+<!--        android:autoSizeTextType="uniform"-->
+<!--        android:maxLines="1"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textStyle="bold"-->
+
+<!--        app:layout_constraintVertical_bias="0.0125"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/ngo_form"-->
+
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        app:layout_constraintWidth_percent="0.2"-->
+
+<!--        android:layout_marginStart="10dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        app:layout_constraintStart_toEndOf="@+id/gov_form"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/back"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        android:text="NGO"-->
+<!--        android:gravity="center_horizontal|center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:autoSizeTextType="uniform"-->
+<!--        android:maxLines="1"-->
+<!--        android:backgroundTint="#CCCCCC"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textStyle="bold"-->
+
+<!--        app:layout_constraintVertical_bias="0.0125"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/cha_form"-->
+
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        app:layout_constraintWidth_percent="0.2"-->
+
+<!--        android:layout_marginStart="10dp"-->
+
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        app:layout_constraintStart_toEndOf="@+id/ngo_form"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/back"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        android:text="CHA"-->
+<!--        android:gravity="center_horizontal|center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:backgroundTint="#CCCCCC"-->
+<!--        android:autoSizeTextType="uniform"-->
+<!--        android:maxLines="1"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textStyle="bold"-->
+
+<!--        app:layout_constraintVertical_bias="0.0125"-->
+<!--        />-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll_view_all"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="175dp"-->
+<!--        android:fillViewport="true"-->
+<!--        android:visibility="visible"-->
+<!--        >-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout_all"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleStart_all"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.075" />-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleEnd_all"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.925" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_gov_all"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_all"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_all"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_gov"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Senior Citizen Card"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_gov2_all"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_all"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_all"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/cardView_gov_all"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_gov2"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Old Age Allowance"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_ngo_all"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_all"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_all"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/cardView_gov2_all"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_ngo"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:layout_editor_absoluteX="0dp"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Senior Citizen Card"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_cha_all"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_all"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_all"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/cardView_ngo_all"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_default"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Short-term Food Assistance Service - Blessed Food"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll_view_gov"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="175dp"-->
+<!--        android:layout_marginBottom="150dp"-->
+<!--        android:fillViewport="true"-->
+<!--        android:visibility="invisible"-->
+<!--        >-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout_gov"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleStart_gov"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.075" />-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleEnd_gov"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.925" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_gov_gov"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_gov"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Senior Citizen Card"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_gov2_gov"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/cardView_gov_gov"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_gov2"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Old Age Allowance"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll_view_ngo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="175dp"-->
+<!--        android:layout_marginBottom="150dp"-->
+<!--        android:fillViewport="true"-->
+<!--        android:visibility="invisible"-->
+<!--        >-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout_ngo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleStart_ngo"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.075" />-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleEnd_ngo"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.925" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_ngo_ngo"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_ngo"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_ngo"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_ngo"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:layout_editor_absoluteX="0dp"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Senior Citizen Card"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll_view_cha"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="175dp"-->
+<!--        android:layout_marginBottom="150dp"-->
+<!--        android:fillViewport="true"-->
+<!--        android:visibility="invisible"-->
+<!--        >-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout_cha"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleStart_cha"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.075" />-->
+
+<!--                <androidx.constraintlayout.widget.Guideline-->
+<!--                    android:id="@+id/guideline_titleEnd_cha"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintGuide_percent="0.925" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardView_cha_cha"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_cha"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/guideline_titleStart_cha"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:cardCornerRadius="25dp"-->
+<!--                    >-->
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <ImageButton-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="400dp"-->
+
+<!--                            android:background="@drawable/banner_default"-->
+
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            />-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="125dp"-->
+
+<!--                            android:background="#CCCCCC99"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="125dp"-->
+<!--                            app:layout_constraintWidth_percent="0.65"-->
+
+<!--                            android:paddingStart="25dp"-->
+
+<!--                            android:text="Short-term Food Assistance Service - Blessed Food"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textAppearance="@style/text3"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:gravity="left|center"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
